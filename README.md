@@ -50,7 +50,7 @@ const December2018 = new Calendar(2018, 12).fill();
 
 C'est muy bien ! On commence avec un peu de rigeur et de bonne résolution !
 
-Aujourd'hui j'ai appris à comprendre ***wdilt(https://github.com/blyndusk/wdilt)*** (merci blyndusk <3) :
+Aujourd'hui j'ai appris à comprendre [wdilt](https://github.com/blyndusk/wdilt) (merci [blyndusk](https://github.com/blyndusk) <3) :
 - Avec GitHub : 
 `git init wdilt(jay)`<br>
 Raccourcie zsh : 
