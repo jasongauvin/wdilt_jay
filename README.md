@@ -58,7 +58,7 @@ Raccourcie zsh :
     - `git add *` = `gaa`
     - `git commit -m "***"` = `gc -m`
     - `git push`= `gp`
-    - `git pull`= `gl`
+    - `git pull`= `gl`(récuperer modification du repo)
 - Sur le web :
 [SQL](https://sql.sh/ressources/document/mysql-aide-memoire-sql.pdf) Memento des commandes
 - Tips : [htop](https://hisham.hm/htop/) <br>This is htop, an interactive process viewer for Unix systems. It is a text-mode application (for console or X terminals) and requires ncurses : `brew install htop`
