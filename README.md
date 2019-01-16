@@ -52,10 +52,13 @@ C'est muy bien ! On commence avec un peu de rigeur et de bonne résolution !
 
 Aujourd'hui j'ai appris à comprendre ***wdilt(https://github.com/blyndusk/wdilt)*** (merci blyndusk <3) :
 - Avec GitHub : 
-`git init wdilt(jay)`
-`git add *` = `gaa`
+`git init wdilt(jay)`<br>
+Raccourcie zsh : 
+    - `git statut`= `gst`
+    - `git add *` = `gaa`
+    - `git commit -m "***"` = `gc -m`
+    - `git push`= `gp`
+    - `git pull`= `gl`
 - Sur le web :
 [SQL](https://sql.sh/ressources/document/mysql-aide-memoire-sql.pdf) Memento des commandes
-- Tips : [htop](https://hisham.hm/htop/) <br>This is htop, an interactive process viewer for Unix systems. It is a text-mode application (for console or X terminals) and requires ncurses.
-
-`brew install htop`
+- Tips : [htop](https://hisham.hm/htop/) <br>This is htop, an interactive process viewer for Unix systems. It is a text-mode application (for console or X terminals) and requires ncurses : `brew install htop`
