@@ -51,8 +51,26 @@ const December2018 = new Calendar(2018, 12).fill();
 C'est muy bien ! On commence avec un peu de rigeur et de bonne résolution !
 
 Aujourd'hui j'ai appris à comprendre [wdilt](https://github.com/blyndusk/wdilt) (merci [blyndusk](https://github.com/blyndusk) <3) :
+- Command line interpretor (cli) **wdilt** :
+    - <br>
+    - bite
+    - `bite`
+    - ``bite``
+    - 
+    ```Javascipt
+    bite
+    ```
+    - (bite)
+    - [bite]()
+    - "bite"
+    - *bite*
+    - **bite**
+    - ***bite***
 - Avec GitHub : 
-`git init wdilt(jay)`<br>
+`git init wdilt_jay` (créer dossier local)<br>
+Create repository (créer repo distant sur github.com)<br>
+`git clone http://github.com/...`(cloner le nouveau repo)<br>
+Copier/coller les fichiers utiles dans le nouveau dossier cloné<br>
 Raccourcie zsh : 
     - `git statut`= `gst`
     - `git add *` = `gaa`
@@ -62,3 +80,4 @@ Raccourcie zsh :
 - Sur le web :
 [SQL](https://sql.sh/ressources/document/mysql-aide-memoire-sql.pdf) Memento des commandes
 - Tips : [htop](https://hisham.hm/htop/) <br>This is htop, an interactive process viewer for Unix systems. It is a text-mode application (for console or X terminals) and requires ncurses : `brew install htop`
+
