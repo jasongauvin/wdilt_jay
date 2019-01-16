@@ -56,7 +56,7 @@ Aujourd'hui j'ai appris à comprendre ***wdilt(https://github.com/blyndusk/wdilt
 Raccourcie zsh : 
     - `git statut`= `gst`
     - `git add *` = `gaa`
-    - `git commit -m "***"` = `gc -m`
+    - `git commit -m "***-**-**"` = `gc -m"****-**-**`
     - `git push`= `gp`
     - `git pull`= `gl`(récuperer modification du repo)
 - Sur le web :
