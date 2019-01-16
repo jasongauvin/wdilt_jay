@@ -48,11 +48,10 @@ const December2018 = new Calendar(2018, 12).fill();
 
 ### 2019-01-16
 
-C'est muy bien ! On commence avec un peu de rigeur et de bonne résolution !
+C'est muy bien ! On commence avec un peu de rigeur et de bonnes résolutions !
 
 Aujourd'hui j'ai appris à comprendre [wdilt](https://github.com/blyndusk/wdilt) (merci [blyndusk](https://github.com/blyndusk) <3) :
 - Command line interpretor (cli) **wdilt** :
-    - <br>
     - bite
     - `bite`
     - ``bite``
