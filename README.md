@@ -80,3 +80,10 @@ Raccourcie zsh :
 [SQL](https://sql.sh/ressources/document/mysql-aide-memoire-sql.pdf) Memento des commandes
 - Tips : [htop](https://hisham.hm/htop/) <br>This is htop, an interactive process viewer for Unix systems. It is a text-mode application (for console or X terminals) and requires ncurses : `brew install htop`
 
+### 2019-01-17
+
+Aujourd'hui, j'ai commencé ma journée en utilisant [tuto-php] mis en place par mon mentor de 3ème année et un ancien professeur de PHP : 
+- Lancer docker (si pas installer faire : `brew install docker cask && brew cask install docker`)
+- Se mettre dans le dossier **tuto-php** puis :
+    - Démarrage avec : `docker run -it --rm -p 8088:80 tuto`
+    - Lancer avec : `./run`
