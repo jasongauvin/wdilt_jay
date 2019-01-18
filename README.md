@@ -48,29 +48,29 @@ const December2018 = new Calendar(2018, 12).fill();
 
 ### 2019-01-16
 
-C'est muy bien ! On commence avec un peu de rigeur et de bonnes résolutions !
+C'est muy bien ! On commence avec un peu de rigueur et de bonnes résolutions !
 
 Aujourd'hui j'ai appris à comprendre [wdilt](https://github.com/blyndusk/wdilt) (merci [blyndusk](https://github.com/blyndusk) <3) :
 - Command line interpretor (cli) **wdilt** :
-    - bite
-    - `bite`
-    - ``bite``
+    - mordre
+    - `mordre`
+    - ``mordre``
     - 
     ```Javascipt
-    bite
+    mordre
     ```
-    - (bite)
-    - [bite]()
-    - "bite"
-    - *bite*
-    - **bite**
-    - ***bite***
+    - (mordre)
+    - [mordre]()
+    - "mordre"
+    - *mordre*
+    - **mordre**
+    - ***mordre***
 - Avec GitHub : 
 `git init wdilt_jay` (créer dossier local)<br>
 Create repository (créer repo distant sur github.com)<br>
 `git clone http://github.com/...`(cloner le nouveau repo)<br>
 Copier/coller les fichiers utiles dans le nouveau dossier cloné<br>
-Raccourcie zsh : 
+Raccourcis zsh : 
     - `git statut`= `gst`
     - `git add *` = `gaa`
     - `git commit -m "***-**-**"` = `gc -m"****-**-**"`
@@ -82,8 +82,18 @@ Raccourcie zsh :
 
 ### 2019-01-17
 
-Aujourd'hui, j'ai commencé ma journée en utilisant [tuto-php] mis en place par mon mentor de 3ème année et un ancien professeur de PHP : 
-- Lancer docker (si pas installer faire : `brew install docker cask && brew cask install docker`)
+### tuto-php
+Aujourd'hui, j'ai commencé ma journée en utilisant **tuto-php** mis en place par mon mentor de 3ème année et un ancien professeur de PHP : 
+- Lancer docker (si pas installé, faire : `brew install docker cask && brew cask install docker`)
 - Se mettre dans le dossier **tuto-php** puis :
+    - Pour rebuild docker : `docker build -t [nom] dossier`
     - Démarrage avec : `docker run -it --rm -p 8088:80 tuto`
     - Lancer avec : `./run`
+
+### 2019-01-18
+
+### [devbreak.fr](https://github.com/sundowndev/devbreak.fr)
+
+Découvert du répo [devbreak.fr](https://github.com/sundowndev/devbreak.fr) d'un élève de W2 de l'école : [Raphael](https://github.com/sundowndev) (Remerciement ^^).<br> 
+***Devbreak*** est une sorte de boite à outils. Le contenu étant limité, je vais le modifier avec mes infos afin de l'améliorer et de faire une petite update. <br>
+Le contenu est gérer en Javascript se qui rend d'autant plus simple son utilisation.
