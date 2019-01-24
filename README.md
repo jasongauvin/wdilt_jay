@@ -101,7 +101,7 @@ Le contenu est gérer en Javascript se qui rend d'autant plus simple son utilisa
 
 *PASSAGE A WINDOBS...*
 
-### Les ténèbres ou la mise en place de mon environnement de travail
+### Les ténèbres... ou la mise en place de mon environnement de travail
 
 - PATH : Les modification sous W10
     - Dans Rechercher, lancez une recherche et sélectionnez : Système (Panneau de configuration)
@@ -159,7 +159,7 @@ Le contenu est gérer en Javascript se qui rend d'autant plus simple son utilisa
     - [wampserverx64](https://sourceforge.net/projects/wampserver/files/latest/download) : ATTENTION Il faut aussi installer les dernières versions de "visual c++ 2010/2012/2015" en version x64 sinon erreur avec les dll (msver110/msver120/vcruntime140)
     - [php](https://windows.php.net/download/) : ***.zip*** VC15 x64 Non Thread Safe (2019-Jan-10 00:54:24)  et modifier le PATH
     - [mySQL](https://dev.mysql.com/downloads/file/?id=483327) et modifier le PATH
-    - [docker]() :
+    - [docker](https://hub.docker.com/editions/community/docker-ce-desktop-windows?tab=description) :
         - `./run`
         - `docker run --rm -p 8088:80 tuto`
         - chrome : http://localhost:8088/basics
