@@ -109,6 +109,7 @@ Le contenu est gérer en Javascript se qui rend d'autant plus simple son utilisa
     - Cliquez sur Variables d'environnement. Dans la section Variables système, recherchez la variable d'environnement PATH et sélectionnez-la. Cliquez sur Modifier. Si la variable d'environnement PATH n'existe pas, cliquez sur Nouvelle.
     - Dans la fenêtre Modifier la variable système (ou Nouvelle variable système), indiquez la valeur de la variable d'environnement PATH. Cliquez sur OK. Fermez toutes les fenêtres restantes en cliquant sur OK.
     - Ouvrez à nouveau la fenêtre d'invite de commande et exécutez votre code Java.
+    - OU windows + pause
 
 - La recherche de la console correcte
     - Le plus utilisé : [cmdr](http://cmder.net/)
@@ -163,3 +164,55 @@ Le contenu est gérer en Javascript se qui rend d'autant plus simple son utilisa
         - `./run`
         - `docker run --rm -p 8088:80 tuto`
         - chrome : http://localhost:8088/basics
+
+### 2019-01-25
+
+### PHP :
+- [echo vs print](http://www.zpmag.com/articles/echo.html) : 
+    - echo : 
+        - echo -- Output one or more strings
+        - echo() is not actually a function (it is a language construct)
+        - Prototype: void echo ( string arg1 [, string argn...])
+    - print : 
+        - print -- Output a string
+        - print() is not actually a real function (it is a language construct)
+        - Prototype: int print ( string arg)
+    - echo $A, $B, $C; // Valide et  print $A, $B, $C; // Invalide même si print $A.$B.$C; // Valide
+    - Le code de traitement de 'print' est le double de celui du traitement de 'echo'
+- [printf()](http://php.net/manual/fr/function.printf.php)
+- [fprintf()](http://php.net/manual/fr/function.fprintf.php)
+
+### tuto-php
+
+- démarrer serveur : `php -S localhost:8888 -t \Users\Public` (Démarre un serveur dans le directory ./public)
+- cli :
+    - écrire un fichier (pico, nano, vi, vim, emacs)
+    - se déplacer dans les répertoires (cd)
+    - déplacer des fichiers (mv) (au passage, mv sert aussi à renommer un fichier. En fait on le déplace dans le même répertoire en lui donnant un nombre différent)
+    - effacer des fichiers (rm)
+    - copier des fichiers/dossiers (cp, rsync)
+- script bash :
+    - ```#!/bin/bash``` est "l'entête" ([shebang](https://fr.wikipedia.org/wiki/Shebang) = #!) d'un fichier texte qui indique au système d'exploitation (de type Unix) que ce fichier n'est pas un fichier binaire mais un script (ensemble de commandes) ; sur la même ligne est précisé l'interpréteur permettant d'exécuter ce script.. --> en locurence : **bash**
+        - le mien 
+        ```bash
+        #!/bin/bash
+        code .
+        ```
+
+### 2019-01-31
+
+### docker :
+- afficher les docker actif : docker ps -aq
+- stop all running container : docker stop $(docker ps -a -q)
+
+### XAMPP
+- Lancez XAMPP via le terminal :  sudo /opt/lampp/lampp start
+- voir :
+    - http: // localhost
+    - http: // localhost / phpmyadmin
+
+### Cours security
+- Lancer php_serveur :
+    - se mettre dans le dossier : /opt/lampp/htdocs/cours_security
+    - puis lancer : php php_serveur.php
+​
