@@ -216,3 +216,64 @@ Le contenu est gérer en Javascript se qui rend d'autant plus simple son utilisa
     - se mettre dans le dossier : /opt/lampp/htdocs/cours_security
     - puis lancer : php php_serveur.php
 ​
+
+### 2019-02-05
+
+- Installer un paquet .deb : `sudo dpkg -i package_file.deb`
+- Démarrer/Statut/Stop apache2 : `sudo systemctl start/statut/stop apache2`
+
+### 2019-03-12
+
+### CLI
+- creer un fichier : `touch nomdufichier`
+- creer un dossier : `mkdir nomdudossier`
+- autoriser un dossier ou fichier : `chmod -R 777 nomdufichieroudossier`
+- disable/enable security apple : `sudo spctl --master-disable`
+- [docker remove unused containers, networks, and images](https://medium.com/the-code-review/clean-out-your-docker-images-containers-and-volumes-with-single-commands-b8e38253c271)
+    - `docker system prune` : WARNING! This will remove:
+        - all stopped containers
+        - all networks not used by at least one container
+        - all dangling images
+        - all build cache
+    - `docker system prune --all --force --volumes` : WARNING! This will remove:
+        - all stopped containers
+        - all networks not used by at least one container
+        - all volumes not used by at least one container
+        - all images without at least one container associated to them
+        - all build cache
+    - Typescript
+        - Installer typescript : `npm install -g typescript`
+        - Pour compiler : `tsc demo.ts`
+        - cmd importante : `tsc -w` pour voir et compiler les fichiers
+        - `--pretty` pour les erreurs propre
+        - `tsc -w demo.ts` Pour compiler en live
+        - Pour compiler en différentes version js : `demo.ts --target 'es6'`
+
+### 2019-03-29
+
+### GIT-FLOW
+
+Le workflow Gitflow définit un modèle de création de branche strict conçu autour de la livraison du projet. Cela fournit un framework solide pour la gestion de projets plus importants.
+Il attribue plutôt des rôles très spécifiques aux différentes branches et définit comment et quand elles doivent interagir. Outre les branches de fonctionnalité (feature), le workflow utilise des branches individuelles pour la préparation, la maintenance et l'enregistrement des livraisons.
+Le workflow est idéal dans le cadre d'un workflow de logiciel basé sur la livraison.
+Gitflow fournit un canal dédié pour les hotfix vers la production.
+
+- Sur les systèmes OSX, vous pouvez exécuter brew install git-flow. Sous Windows, vous devrez télécharger et installer git-flow. Une fois git-flow installé, vous pouvez l'utiliser dans votre projet en exécutant git flow init.
+Ce workflow utilise deux branches au lieu d'une seule branche master pour sauvegarder l'historique du projet. La branche master stocke l'historique officiel des versions, et la branche develop sert de branche d'intégration pour les fonctionnalités. Il peut également être utile d'attribuer à tous les commits de la branche master un numéro de version. Cependant, au lieu de créer une nouvelle branche à partir de master, les branches de fonctionnalité (feature) utilisent la branche develop comme une branche parente. Lorsqu'une fonctionnalité est terminée, elle est à nouveau mergée dans develop. Les fonctionnalités ne communiquent jamais directement avec la branche master.
+    - Création d'une branche de fonctionnalité : `git flow feature start feature_branch`
+    - Terminer une branche de fonctionnalité : `git flow feature finish feature_branch`
+- La création de branches de livraison est une autre opération de branching directe. À l'instar des branches feature, les branches release sont basées sur la branche develop. 
+    - Création d'une branche release : `git flow release start 0.1.0`
+    - Terminer une branche release : `git flow release finish '0.1.0`
+
+- Les branches de maintenance ou « hotfix » sont utilisées pour appliquer rapidement des patchs aux livraisons de production. Les branches hotfix sont très similaires aux branches release et feature, si ce n'est qu'elles sont basées sur la branche master et non sur la branche develop. C'est la seule branche dont vous pouvez directement faire un fork à partir de master. Une fois que le correctif est terminé, vous devez en faire un merge dans master et develop (ou dans la branche release courante), puis attribuer à master un numéro de version actualisé.
+    - Création d'une branche hotfix : `git flow hotfix start hotfix_branch`
+    - Terminé une branche hotfix : `git flow hotfix finish hotfix_branch`
+- Le flux global de Gitflow est le suivant :
+    - Une branche develop est créée à partir de master.
+    - Une branche release est créée à partir de la branche develop
+    - Des branches feature sont créées à partir de la branche develop
+    - Lorsqu'une fonctionnalité est terminée, elle est mergée dans la branche develop.
+    - Lorsque la branche release est terminée, elle est mergée dans la branche develop et dans la branche master
+    - Si un problème est détecté dans master, une branche hotfix est créée à partir de master.
+    - Une fois la branche hotfix terminée, elle est mergée dans la branche develop et dans la branche master
